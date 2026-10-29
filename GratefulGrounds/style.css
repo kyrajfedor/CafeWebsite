@@ -151,6 +151,8 @@ nav li:first-child{
     width: 100%;   
     break-inside: avoid; 
     margin-bottom: 10px;
+    margin-right: 5px;
+    padding
 }
 
 
@@ -192,7 +194,7 @@ nav li:first-child{
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
-    margin: 5px 5px 5px 5px;
+    margin: 10px auto 5px auto;
 }
 
 footer{
