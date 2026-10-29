@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grateful Grounds Cafe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+    <script src="main.js"></script>
+
+    <script src="./data/items.js"></script>
+
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    
+        <button id="viewFallMenuBtn">fall feature menu pdf</button>
+
+
+    <!-- feature menu ................. -->
+
+    <section id="featured" class="featured-section">
+        <p class="featured-title">FALL FEATURES</p>
+        <p class="section-intro">
+            Cozy classic and sips you'll keep coming back for
+        </p>
+
+        <div id="featured-list" class="featured-grid"></div>
+    </section>
+    <footer id="footer-placeholder">
+        <script>
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.querySelector("footer").innerHTML = data;
+            });
+        </script>
+    </footer>
+</body>
+</html>

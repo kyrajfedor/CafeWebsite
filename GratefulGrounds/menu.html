@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#244d43">
+  <meta name="description" content="Coffee, tea, fresh bakery treats, and sandwiches with a little autumn warmth.">
+  <title>gg — Coffee & Bakery</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
+  <script src="main.js"></script>
+
+  <script src="./data/items.js"></script>
+
+
+</head>
+
+<body>
+
+  <div id="navbar-placeholder"></div>
+  <button id="viewMenuBtn">menu pdf</button>
+  <div id="menu">
+    <div>
+      <!-- <h3>Menu</h3> -->
+    
+   
+    </div>
+
+    <div id="drinksDiv" class="menu-group">
+      <div id="coffee-div" class="menu-section">
+        <h4>Coffee</h4>
+        <p class="menu-item">Drip Coffee</p>
+        <p class="menu-item">Espresso</p>
+        <p class="menu-item">Americano</p>
+        <p class="menu-item">Latte</p>
+        <p class="menu-item">Cappuccino</p>
+        <p class="menu-item">Macchiato</p>
+        <p class="menu-item">Mocha</p>
+      </div>
+      <div id="tea-div" class="menu-section">
+        <h4>Tea</h4>
+        <p class="menu-item">London Fog</p>
+        <p class="menu-item">Chai Latte</p>
+      </div>
+      <div id="flavours-div" class="menu-section">
+        <h4>Flavours</h4>
+        <p>Vanilla · Hazelnut · Caramel · Lavender</p>
+      </div>
+      <div id="milk-div" class="menu-section">
+        <h4>Milk Options</h4>
+        <p class="menu-note">Almond · Soy · Oat</p>
+      </div>
+    </div>
+    <div id="bakery-div">
+      <h4>Bakery</h4>
+      <section id="bakeryContent">
+        <div id="leftBakeryContent">
+          <section class="bold">CROISSANTS</section>
+          <section>Pistachio · Almond · Chocolate</section>
+          <section class="bold">DANISHES</section>
+          <section>Lemon · Strawberry · Blueberry</section>
+        </div>
+        <div>
+          <section>Donuts</section>
+          <section>Cinnamon Buns</section>
+          <section>Apple Fritters</section>
+          <section>Pastel de Natas</section>
+          <section>Cake Slices</section>
+          <section>Assorted Cookies</section>
+          <section>Oatmeal Sandwich Cookies</section>
+        </div>
+
+
+      </section>
+    </div>
+    <div id="sandwiches-div">
+      <h4>Sandwiches</h4>
+      <div id="sandwich-content">
+        <div class="sand-item">
+          <h5>The Italian Stallion</h5>
+          <p>Capocollo, mortadella, prosciutto cotto, provolone with lettuce.</p>
+        </div>
+        <div class="sand-item">
+          <h5>The Kick</h5>
+          <p>Soppressata, mortadella, prosciutto, Havarti with basil pesto.</p>
+        </div>
+        <div class="sand-item">
+          <h5>Classics</h5>
+          <p>Egg Salad</p>
+          <span></span><p>Roast Beef</p></div></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer-placeholder">
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.querySelector("footer").innerHTML = data;
+        });
+    </script>
+  </footer>
+
+</body>
+</html>

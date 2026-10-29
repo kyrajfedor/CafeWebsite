@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    background-image: url('./images/drinks.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* Ensure the background covers the full viewport height */
+    min-height: 100vh;
+
+    color: #49372D;
+
+
+    /* Remove default browser padding and margin */
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: absolute;
+    /* Floats the navbar over the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25);
+    /* Semi-transparent background so image shows through */
+    z-index: 10;
+    /* Ensures navbar stays on top of other content */
+}
+nav a{
+    color: #FFF9EE;
+}
+
+.page-content {
+    padding-top: 55px;
+    /* Prevents text from being hidden behind the navbar */
+    text-align: center;
+    color: #FFF9EE;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    padding: 5px;
+}
