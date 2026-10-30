@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grateful Grounds Cafe</title>
-
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.js"></script>
     <script src="main.js"></script>
@@ -15,29 +14,150 @@
 </head>
 
 <body>
-    <div id="navbar-placeholder"></div>
-    
-        <button id="viewFallMenuBtn">fall feature menu pdf</button>
+    <main>
+        <section id="navbar-placeholder"></section>
+        
+        <!-- feature menu ................. -->
+        <section id="featured" class="featured-section">
+            <p class="featured-title">Seasonal Sips</p>
+            <p class="section-intro">
+                Cozy classic and sips you'll keep coming back for
+            </p>
+            <div id="featured-list" class="featured-grid"></div>
+        </section>
+        <section id="menu">
+            <!-- Coffee -->
+            <div id="drinksDiv">
+                <!-- <h2>Coffee</h2> -->
+                <table>
+                    <thead>
+                        <td>Coffee</td>
+                    </thead>
+                    <tbody>
+                        <tr><td>Drip Coffee</td></tr>
+                        <tr><td>Espresso</td></tr>
+                        <tr><td>Americano</td></tr>
+                        <tr><td>Latte</td></tr>
+                        <tr><td>Cappuccino</td></tr>
+                        <tr><td>Macchiato</td></tr>
+                        <tr><td>Mocha</td></tr>
+                    </tbody>
+                </table>
+            
 
+            <!-- Tea -->
+            
+                <table>
+                    <thead><th>Tea</th></thead>
+                    <tbody>
+                        <tr><td>London Fog</td></tr>
+                        <tr><td>Chai Latte</td></tr>
+                    </tbody>
+                </table>
+           
 
-    <!-- feature menu ................. -->
+            <!-- Flavours and milk options -->
+            
+                <table>
+                    <thead><th>Flavours</th></thead>
+                    <tbody>                    
+                        <tr><td>Vanilla</td></tr>
+                        <tr><td>Hazelnut</td></tr>
+                        <tr><td>Caramel</td></tr>
+                        <tr><td>Lavender</td></tr>
+                    </tbody>
+                </table>
+            
+                <table>
+                    <thead>
+                        <tr><th>Milk Options</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Almond</td></tr>
+                        <tr><td>Soy</td></tr>
+                        <tr><td>Oat</td></tr>
+                    </tbody>
+                </table>
+            </div>
 
-    <section id="featured" class="featured-section">
-        <p class="featured-title">FALL FEATURES</p>
-        <p class="section-intro">
-            Cozy classic and sips you'll keep coming back for
-        </p>
+            <!-- bakery -->
+            <div>
+                <table>
+                <thead>
+                    <tr><th colspan="2">Bakery</th></tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>Croissants</td>
+                            <tr><td class="desc">Pistachio • Almond • Chocolate </td></tr>
+                        </tr>
+                        <tr>
+                            <td>Danishes</td>
+                            <tr><td class="desc">Lemon • Strawberry • Caramel • Lavender</td></tr>
+                        </tr>
+                        <tr><td colspan="2">Donuts</td></tr>
+                        <tr><td colspan="2">Cinnamon Buns</td></tr>
+                        <tr><td colspan="2">Apple Fritters</td></tr>
+                        <tr><td colspan="2">Pastel de Natas</td></tr>
+                        <tr><td colspan="2">Cake Slices</td></tr>
+                        <tr><td colspan="2">Assorted Cookies</td></tr>
+                        <tr><td colspan="2">Oatmeal Sandwich Cookies</td></tr>
+                </tbody>
+                </table>
+            </div>
+            <!-- end bakery  -->
 
-        <div id="featured-list" class="featured-grid"></div>
-    </section>
-    <footer id="footer-placeholder">
-        <script>
-            fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.querySelector("footer").innerHTML = data;
-            });
-        </script>
+            <!-- sandwiches -->
+            <div>
+                <table id="sandwichDiv">
+                    <thead><tr><th colspan="2">Sandwiches</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td id="tt">The Italian Stallion</td>
+                            <td>Capocollo, mortadella, prosciutto cotto, provolone with lettuce</td>
+                        </tr>
+                        <tr>
+                            <td>The Kick</td>
+                            <td>Soppressata, mortadella, prosciutto, havarti with basil pesto</td>
+                        </tr>
+                        <tr>
+                            <td>Classics</td>
+                            <td>Egg Salad • Roast Beef</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+            <!-- end sandwiches -->
+        </section> <!-- end menu -->
+
+        
+
+    </main>
+    <footer>
+
     </footer>
+    
+    
+    <!-- <button id="viewFallMenuBtn">fall feature menu pdf</button> -->
+
+    <!-- menu table -->
+
+
+
+
+
+
+    
+    <footer id="footer-placeholder">
+      <script>
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.querySelector("footer").innerHTML = data;
+        });
+      </script>
+  </footer>
 </body>
 </html>

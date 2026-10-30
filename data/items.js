@@ -1,10 +1,10 @@
 const featureMenu = [
-    {name: 'Banana Pudding Latte', desc:'Creamy banana latte with dulce de leche, topped with banana pudding cold foam and a cookie crumble', image: './images/bananaPuddingLatte.jpg' },
-    {name: 'Sparkling Pear Refresher', desc: 'Light, crisp and refreshing with lemonade, pear juice and sparkling water, finished with rosemary and lemon', image: './images/sparklingPearRefresher.jpg'} ,
-    {name: 'Caramel Apple Pie Latte', desc: '', image: './images/capl.jpg'},
-    {name: 'Brown Butter Latte', desc: 'Buttery and sweet with brown butter, maple syrup and cinnamon', image: './images/brownButterLatte.jpg'}, 
-    {name: 'Pumpkin Cream Chai', desc:'A fall favourite with chai concentrate topped with pumpkin cream cold foam', image: './images/pumpkinCreamChai.jpg'}, 
-    {name: 'Pumpking  Latte', desc: '', image: './images/psl.jpg'}
+    {name: 'Banana Pudding Latte', desc:'Creamy banana latte with dulce de leche, topped with banana pudding cold foam and a cookie crumble.', image: './images/bananaPuddingLatte.jpg' },
+    {name: 'Sparkling Pear Refresher', desc: 'Light, crisp and refreshing with lemonade, pear juice and sparkling water, finished with rosemary and lemon.', image: './images/sparklingPearRefresher.jpg'} ,
+    {name: 'Caramel Apple Pie Latte', desc: 'Chai topped with pumpkin cream cold foam. A fall favourite for a reason.', image: './images/capl.jpg'},
+    {name: 'Brown Butter Latte', desc: 'Buttery, sweet and made with brown butter, maple syrup and cinnamon. Basically fall in a cup.', image: './images/brownButterLatte.jpg'}, 
+    {name: 'Pumpkin Cream Chai', desc:'Chai topped with pumpkin cream cold foam. A fall favourite for a reason.', image: './images/pumpkinCreamChai.jpg'}, 
+    {name: 'Pumpking Spice Latte', desc: 'The fall classic. Hot or iced with all those warm, cozy spices we wait all year for.', image: './images/psl.jpg'}
 ];
 
 const coffeeItems = [
